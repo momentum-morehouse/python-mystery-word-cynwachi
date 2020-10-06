@@ -12,13 +12,17 @@
 # normal 6-8 characters if/then statements
 # hard 8+ characters if/then statments
 
-#select word to get started = pizza for 
+#select word to get started = pizza for the build out 
 word = "pizza"
-print(len(word))
+
 
 #show in console the number of letters in computers' word and display 
 
+print(len(word))
+
 #user enter guess - one letter only (uppercase/lowercase) at a time per round
+#set input limit to 1 character 
+# If more than one character is entered, tell user that input is invalid and to try again
 def playgame():
     guess = input("Choose a letter ")
     print(guess)
@@ -28,6 +32,7 @@ def playgame():
     else:
         print("Nope, try again")
         playgame()
+
 playgame()     
 
 #put guesses in list and count
